@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ep5-actions"
+version = "0.1.0"
+description = "Projeto simples para demonstrar testes com GitHub Actions em multiplos sistemas operacionais."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Brendo" }
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
